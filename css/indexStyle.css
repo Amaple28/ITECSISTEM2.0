@@ -1,0 +1,176 @@
+/*RGB DO VINHO --> (138,32,45)
+RGB DO AMARELO --> (254,179,0)
+As outras cores são preto, branco e um amarelo clarinho...
+RGB DO AMARELO CLARINHO --> (255,250,186)*/
+
+/*Auxs*/
+*{
+    scroll-behavior: smooth;
+}
+
+.icon-seta{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+/*Custom hr's*/
+hr {
+    border: 0;
+    height: 1px;
+    width: 40%;
+    position: relative;
+    margin: 30px auto;
+}
+
+.center-ball {
+    background: rgb(138,32,45);
+}
+
+.center-ball::before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: rgb(138,32,45);
+        display: inline-block;
+        border: 2px solid rgb(138,32,45);
+        border-radius:50%;
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        margin: 0 0 0 -3px;
+}
+/*NavBar*/
+.btnHoraDeEstudar{
+    color: rgb(138,32,45);
+    border-color:rgb(138,32,45) ;
+}
+
+.btnHoraDeEstudar:hover{
+    background-color: rgb(138,32,45);
+    border-color:rgb(138,32,45) ;
+
+}
+
+
+
+/*Formatação banner*/
+.banner{
+    background-image: url(../img/login/bg-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div{
+    text-align: center;
+    color: black;
+}
+
+.banner div h1{
+    font-size: 60px;
+}
+
+.banner div p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/*Corpo com margem*/
+.corpoComMargem{
+    margin: 50px;
+}
+
+/*Quem somos*/
+.quemSomos .content div p{
+    margin-top: 60px;
+    max-width: 800px;
+}
+
+.quemSomos .content div h1{
+    text-align: center;
+}
+
+.quemSomos .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.quemSomos .content figure img{
+    max-height:500px;
+    height: 100%;
+    text-align: center;
+}
+
+.ytVideoContainer{
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.ytVideoContainer::after{
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.ytVideoContainer iframe{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Entreterimento*/
+.entreterimento h1{
+    text-align: center;
+    margin: 50px;
+}
+
+/*Monitoria*/
+.monitoria{
+    margin-top: 50px;
+}
+
+.monitoria .jumbotron .lead{
+    font-weight: 400;
+}
+
+.monitoria .jumbotron p{
+    font-weight: 300;
+}
+
+/*Suporte Taylor*/
+.suporte .content div p{
+    margin-top: 60px;
+    max-width: 800px;
+}
+
+.suporte .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.suporte .content figure img{
+    margin-bottom: 20px;
+    max-width:400px;
+    width: 100%;
+}
+
+/*Footer*/
